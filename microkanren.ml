@@ -28,8 +28,6 @@ let rec unify (u : exp) (v : exp) (s : state) : state option =
     | _ -> None
   end
 
-let var_counter = ref 0
-
 let fresh (n : int) : exp =
   Var ("x" ^ (string_of_int n))
 
