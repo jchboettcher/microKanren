@@ -1,6 +1,6 @@
 MAIN = main
 
-OBJS = ast.cmo printstream.cmo microkanren.cmo examples.cmo main.cmo
+OBJS = ast.cmo partialreifier.cmo microkanren.cmo examples.cmo main.cmo
 
 %.cmo : %.ml
 	ocamlc -g -c $<

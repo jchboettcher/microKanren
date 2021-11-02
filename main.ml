@@ -1,6 +1,6 @@
 open Ast
 open Microkanren
-open Printstream
+open Partialreifier
 open Examples
 
 let examples = [
