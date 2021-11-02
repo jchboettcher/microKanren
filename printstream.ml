@@ -26,5 +26,5 @@ let string_of_state_stream (str : state stream) (n : int) : string =
     end in
   "[\n" ^ (helper str n) ^ "]"
 
-let print_stream (str : state stream) (n : int) : unit =
-  Printf.printf "%s\n" (string_of_state_stream str n)
+let print_stream (name : string) (str : state stream) (n : int) : unit =
+  Printf.printf "%s\n%s\n\n" name (string_of_state_stream str n)
